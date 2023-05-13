@@ -5,7 +5,7 @@ import { WrapLoader } from './Loader.styled';
 export const Loader = ({
   heightLoader,
   widthLoader,
-  colorLoader = '#ff0000',
+  colorLoader = ' #4caf50',
 }) => {
   return (
     <WrapLoader>
