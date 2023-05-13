@@ -1,10 +1,12 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.section`
-  max-width: 600px;
-  padding: 20px 15px;
-  margin: 10px auto 30px auto;
-  border-radius: 10px;
-  border: 1px solid #000;
-  background-color: #2f2f2f2f;
+  position: relative;
+  z-index: 1;
+  background: #ffffff;
+  max-width: 420px;
+  margin: 0 auto 16px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 `;

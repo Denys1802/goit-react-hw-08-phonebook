@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { Label, Input } from './Filter.styled';
+import { Input } from './Filter.styled';
 import { setFilteredContact } from 'redux/contacts/filterSlice';
 import { selectFilter } from 'redux/contacts/selectors';
 export const Filter = () => {
@@ -10,9 +10,11 @@ export const Filter = () => {
     dispatch(setFilteredContact(event.target.value.toLowerCase()));
   };
   return (
-    <Label>
-      Find contacts by name
-      <Input type="text" value={filter} onChange={handleChange} />
-    </Label>
+    <Input
+      type="text"
+      placeholder="Find contacts by name"
+      value={filter}
+      onChange={handleChange}
+    />
   );
 };

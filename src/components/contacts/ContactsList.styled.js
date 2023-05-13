@@ -15,23 +15,23 @@ export const Item = styled.li`
 `;
 
 export const ContactsBtn = styled.button`
-  height: auto;
-  cursor: pointer;
-  color: white;
-  display: inline-block;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-color: rgb(86, 101, 115);
+  text-transform: uppercase;
+  outline: 0;
+  background: #4caf50;
+  //width: 100%;
+  border: 0;
+  padding: 10px 4px;
   border-radius: 5px;
-  padding: 5px 8px;
-  border: none;
-  outline: none;
-  opacity: 0.8;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.5 ease;
+  cursor: pointer;
+  &:focus,
+  &:active,
   &:hover {
-    opacity: 1;
-    background-color: tomato;
-    //transform: scale(1.1);
+    background: #43a047;
   }
 `;
 
