@@ -28,6 +28,6 @@ export const UserButton = styled.button`
   &:focus,
   &:active,
   &:hover {
-    background: #43a047;
+    background: #fafafa;
   }
 `;

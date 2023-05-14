@@ -1,26 +1,16 @@
-const styles = {
-  container: {
-    minHeight: 'calc(100vh - 50px)',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  title: {
-    fontWeight: 500,
-    fontSize: 48,
-    textAlign: 'center',
-  },
-};
+import { HomeContainer, HomeTitle, HomePageLink } from './Home.styled';
 
 export default function Home() {
   return (
-    <div style={styles.container}>
-      <h1 style={styles.title}>
-        Task manager welcome page{' '}
+    <HomeContainer>
+      <HomeTitle>
+        Hello, Welcome to Contacts Book aplication.In order to enter, you need
+        to {<HomePageLink to="/register"> Registration </HomePageLink>} or{' '}
+        {<HomePageLink to="/login"> Login </HomePageLink>}{' '}
         <span role="img" aria-label="Greeting icon">
           💁‍♀️
         </span>
-      </h1>
-    </div>
+      </HomeTitle>
+    </HomeContainer>
   );
 }

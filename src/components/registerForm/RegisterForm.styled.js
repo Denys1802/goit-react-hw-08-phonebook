@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 export const FormPage = styled.div`
   width: 420px;
-  padding: 8% 0 0;
+  padding: 5% 0 0;
   margin: auto;
 `;
 export const FormRegister = styled.form`

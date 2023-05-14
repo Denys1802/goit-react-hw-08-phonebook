@@ -1,18 +1,15 @@
 import { Outlet } from 'react-router-dom';
-import { Toaster } from 'react-hot-toast';
 import { AppBar } from './appBar/AppBar';
 import { Suspense } from 'react';
-import Footer from './footer/Footer';
+import { Loader } from './loader/Loader';
 
 export const Layout = () => {
   return (
-    <div>
+    <>
       <AppBar />
-      <Suspense fallback={null}>
+      <Suspense fallback={<Loader margin={'40px'} />}>
         <Outlet />
       </Suspense>
-      <Footer />
-      <Toaster position="top-right" reverseOrder={false} />
-    </div>
+    </>
   );
 };
